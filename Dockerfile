@@ -40,9 +40,8 @@ COPY docker/php.deploy.ini /usr/local/etc/php/php.ini
 COPY ./src /var/www/html
 
 RUN <<EOF
-  php artisan optimize:clear
-  php artisan optimize
-  chmod -R 777 storage
+  composer install
+  chmod -R 777 /var/www/html
 EOF
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql
