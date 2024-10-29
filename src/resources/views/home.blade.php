@@ -1,10 +1,10 @@
 @extends('layouts.base')
 
-@section('title', trans('messages.home'))
+@section('title', __('messages.home'))
 
 @section('app')
     <div class="home-background d-flex align-items-center justify-content-center flex-column text-white mb-4" style="background: url('{{ setting('background') ? image_url(setting('background')) : 'https://via.placeholder.com/2000x500' }}') center / cover no-repeat; height: 500px">
-        <h1>{{ trans('messages.welcome', ['name' => site_name()]) }}</h1>
+        <h1>{{ __('messages.welcome', ['name' => site_name()]) }}</h1>
 
         @if($server)
             @if($server->isOnline())
