@@ -40,6 +40,10 @@ COPY docker/php.deploy.ini /usr/local/etc/php/php.ini
 COPY ./src /var/www/html
 
 RUN <<EOF
+
+  npm install
+  npm run prod
+
   composer install.
   chmod -R 777 /var/www/html
 EOF
