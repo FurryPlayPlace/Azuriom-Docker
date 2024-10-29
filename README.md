@@ -1,6 +1,6 @@
-<p align="center"><img src="https://azuriom.com/assets/svg/logo-text.svg" width="400" alt="Azuriom"></p>
+<p align="center"><img src="assets/logo.svg" width="400" alt="Azuriom"></p>
 
-# Azuriom
+# Azuriom (Dockerified)
 
 [![PHP CI](https://img.shields.io/github/actions/workflow/status/Azuriom/Azuriom/tests.yml?branch=master&style=flat-square)](https://github.com/Azuriom/Azuriom/actions/workflows/tests.yml)
 [![Style](https://github.styleci.io/repos/237486333/shield)](https://github.styleci.io/repos/237486333)
@@ -46,9 +46,9 @@ You can ask for support and talk on our [Discord server](https://azuriom.com/dis
 
 Contributions are always welcome!
 
-See [the contribution guidelines](CONTRIBUTING.md) for ways to get started.
+See [the contribution guidelines](src/CONTRIBUTING.md) for ways to get started.
 
-Please adhere to this project's [code of conduct](CODE_OF_CONDUCT.md).
+Please adhere to this project's [code of conduct](src/CODE_OF_CONDUCT.md).
 
 ## Translations
 
@@ -67,4 +67,4 @@ If you like this project, please consider supporting us on [GitHub sponsors](htt
 
 ## License
 
-Azuriom is licensed under the [GNU General Public License v3.0 or later](LICENSE).
+Azuriom is licensed under the [GNU General Public License v3.0 or later](src/LICENSE).
