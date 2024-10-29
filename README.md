@@ -12,59 +12,30 @@
 
 ![Screenshot](https://azuriom.com/assets/img/home.png)
 
-## Supported Games
 
-Azuriom natively supports the following games:
-* [Minecraft](https://www.minecraft.net/)
-* [Garry's Mod](https://gmod.facepunch.com/)
-* [ARK: Survival Evolved](https://playark.com/ark-survival-evolved/)
-* [ARK: Survival Ascended](https://playark.com/)
-* [Rust](https://rust.facepunch.com/)
-* [FiveM](https://fivem.net/)
-* [Unturned](https://smartlydressedgames.com/)
-* [Counter-Strike: Global Offensive](https://blog.counter-strike.net/)
-* [7 Days to Die](https://7daystodie.com/)
-* [Team Fortress 2](https://www.teamfortress.com/)
+## About
 
-You can implement your own game like it was done for [Flyff](https://github.com/AzuriomCommunity/Game-Flyff) or [Dofus 1.29](https://github.com/Javdu10/Game-Dofus129).
+This project dockerizes **Azuriom** to facilitate easy deployment and scalability. Using Docker, you can quickly spin up an Azuriom instance, making it easier than ever to manage your server's web presence.
 
-You can find the how-to in [the documentation](https://azuriom.com/en/docs/games)
+We are not affiliated with Azuriom; this project is a community-driven initiative for streamlined deployment.
 
-## Documentation
+## Getting Started
 
-Azuriom's documentation is available [on our website](https://azuriom.com/docs).
+### Prerequisites
 
-## Installation
+Ensure you have [Portainer](https://www.portainer.io/) installed on your machine to manage Docker containers efficiently.
 
-You can find system requirements and installation guide on our [documentation](https://azuriom.com/docs/installation).
+(Optional) We strongly recommend the usage of [Nginx Proxy Manager](https://nginxproxymanager.com/) to facilitate the routing of your DNS.
 
-## Community
+### Installation
 
-You can ask for support and talk on our [Discord server](https://azuriom.com/discord).
+1. Open Portainer and add a new container.
+2. Set the image to `ghcr.io/furryplayplace/azurium:latest`.
+3. Configure any necessary environment variables directly in Portainer if custom settings are needed.
+4. Deploy the container.
+5. Access the Azuriom web interface in your browser at `http://YOUR_IP:8000` (or your specified port).
 
-## Contributing
+## Licenses
 
-Contributions are always welcome!
-
-See [the contribution guidelines](src/CONTRIBUTING.md) for ways to get started.
-
-Please adhere to this project's [code of conduct](src/CODE_OF_CONDUCT.md).
-
-## Translations
-
-You can contribute to translating Azuriom on our [Crowdin](https://translate.azuriom.com/).
-
-## Security
-
-If you discover any security related issues within Azuriom, please send an e-mail to [security@azuriom.com](mailto:security@azuriom.com) instead of using the issue tracker. All security vulnerabilities will be promptly addressed.
-
-> [!NOTE]
-> JavaScript injections from the admin dashboard are not classified as XSS vulnerabilities. Of course, XSS found in user-facing areas of the site, as well as all other vulnerabilities throughout the entire application, will be recognized and addressed accordingly.
-
-## Support us
-
-If you like this project, please consider supporting us on [GitHub sponsors](https://github.com/sponsors/Azuriom).
-
-## License
-
-Azuriom is licensed under the [GNU General Public License v3.0 or later](src/LICENSE).
+Azurium is licensed under the [GNU General Public License v3.0](src/LICENSE)
+As this repository is under the [MIT License](LICENSE)
