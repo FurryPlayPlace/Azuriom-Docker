@@ -44,7 +44,7 @@ RUN <<EOF
   npm install
   npm run prod
 
-  composer install.
+  composer install
   chmod -R 777 /var/www/html
 EOF
 
