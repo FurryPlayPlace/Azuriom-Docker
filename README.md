@@ -30,7 +30,7 @@ Ensure you have [Portainer](https://www.portainer.io/) installed on your machine
 ### Installation
 
 1. Open Portainer and add a new container.
-2. Set the image to `ghcr.io/furryplayplace/azurium:latest`.
+2. Set the image to `ghcr.io/furryplayplace/azuriom-docker:master`.
 3. Configure any necessary environment variables directly in Portainer if custom settings are needed.
 4. Deploy the container.
 5. Access the Azuriom web interface in your browser at `http://YOUR_IP:8000` (or your specified port).
