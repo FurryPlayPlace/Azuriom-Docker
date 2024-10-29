@@ -40,7 +40,7 @@ COPY docker/php.deploy.ini /usr/local/etc/php/php.ini
 COPY ./src /var/www/html
 
 RUN <<EOF
-  composer install
+  composer install.
   chmod -R 777 /var/www/html
 EOF
 
